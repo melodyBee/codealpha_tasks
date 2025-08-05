@@ -26,18 +26,21 @@ function AgeTracking(event) {
         // console.log(AgeDate + 'this is the renewed date')
         // console.log(AgeDate)
         // console.log('full age: ', AgeYear, AgeMonth, AgeDate)
-        if (AgeMonth < 0) {
-            AgeYear--
-            AgeMonth += 12
-            console.log('Full Age: ', AgeYear, AgeMonth, AgeDate)
-            document.getElementById(
-                'output'
-            ).innerText = `You are ${AgeYear} years, ${AgeMonth} months, and ${AgeDate} days old.`
-        }
     } else {
         console.log('else', AgeYear, AgeMonth, AgeDate)
-        document.getElementById(
-            'output'
-        ).innerText = `You are ${AgeYear} years, ${AgeMonth} months, and ${AgeDate} days old.`
     }
+    if (AgeMonth < 0) {
+        AgeYear--
+        AgeMonth += 12
+        console.log('Full Age: ', AgeYear, AgeMonth, AgeDate)
+        // document.getElementById(
+        //     'output'
+        // ).innerText = `You are ${AgeYear} years, ${AgeMonth} months, and ${AgeDate} days old.`
+    } else {
+        console.log('else', AgeYear, AgeMonth, AgeDate)
+    }
+
+    document.getElementById(
+        'output'
+    ).innerText = `You are ${AgeYear} years, ${AgeMonth} months, and ${AgeDate} days old.`
 }
