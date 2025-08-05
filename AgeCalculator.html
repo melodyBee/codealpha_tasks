@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js"></script>
+        <title>Age calculator</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="head">
+                <h1>Age Calculator</h1>
+                <label for="userAge">Enter Date of birth:</label>
+            </div>
+            <form onsubmit="AgeTracking(event)">
+                <div class="entry">
+                    <input id="userAge" type="date" />
+
+                    <button type="submit">Check</button>
+                </div>
+            </form>
+            <div class="outputDiv"><span id="output"></span></div>
+        </div>
+    </body>
+</html>
