@@ -5,20 +5,32 @@
         <title>Age calculator</title>
     </head>
     <body>
-        <div class="main">
-            <div class="head">
-                <h1>Age Calculator</h1>
-                <label for="userAge">Enter Date of birth:</label>
-            </div>
-            <form onsubmit="AgeTracking(event)">
-                <div class="entry">
-                    <input id="userAge" type="date" />
-
-                    <button type="submit">Check</button>
+        <div class="allofit">
+            <div class="main">
+                <div class="head">
+                    <h1>Age Calculator</h1>
+                    <label for="userAge">Enter Date of birth:</label>
                 </div>
-            </form>
-            <div class="outputDiv"><span id="output"></span></div>
+                <form onsubmit="AgeTracking(event)">
+                    <div class="entry">
+                        <input id="userAge" type="date" />
+
+                        <button type="submit">Calculate Age</button>
+                    </div>
+                </form>
+                <div class="outputDiv"><span id="output">Your age: </span></div>
+            </div>
         </div>
+        <div class="allofit">
+            <footer>
+                <a href="https://www.linkedin.com/in/abeera-fatima/">LinkedIn</a>
+                |
+                <a href="https://github.com/melodyBee">Github</a>
+                |
+                <a href="https://www.instagram.com/abeerafatima_shaikhh/">Instagram</a>
+            </footer>
+        </div>
+
         <script src="app.js"></script>
     </body>
 </html>
